@@ -29,10 +29,7 @@ public class GameManager : MonoBehaviour
 
     private void Awake()
     {
-        if (PlayerPrefs.HasKey("HighScore"))
-        {
-            _highScore = PlayerPrefs.GetInt("HighScore", _highScore);
-        }
+       CheckHighScore();
     }
 
     private void Start()
@@ -52,6 +49,14 @@ public class GameManager : MonoBehaviour
     {
         ShowScore();
         ShowFPS();
+    }
+
+    public void CheckHighScore()
+    {
+        if (PlayerPrefs.HasKey("HighScore"))
+        {
+            _highScore = PlayerPrefs.GetInt("HighScore", _highScore);
+        }
     }
 
     private void ShowFPS()
