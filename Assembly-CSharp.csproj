@@ -79,6 +79,8 @@
      <Compile Include="Assets\Scripts\Guns\Pistol.cs" />
      <Compile Include="Assets\Scripts\Characters\Player.cs" />
      <Compile Include="Assets\Scripts\Ads\AdsManager.cs" />
+     <Compile Include="Assets\Scripts\Ads\InterstitialAdExample.cs" />
+     <Compile Include="Assets\Scripts\Ads\AnalyticsManager.cs" />
      <Reference Include="UnityEngine">
      <HintPath>D:\Unity\2021.3.11f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
      </Reference>
@@ -727,11 +729,11 @@
      <Reference Include="Unity.Performance.Profile-Analyzer.Editor">
      <HintPath>D:\TeachMeSkills\Diplom_TMS_shooter\Library\ScriptAssemblies\Unity.Performance.Profile-Analyzer.Editor.dll</HintPath>
      </Reference>
-     <Reference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Model">
-     <HintPath>D:\TeachMeSkills\Diplom_TMS_shooter\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll</HintPath>
-     </Reference>
      <Reference Include="Unity.VisualStudio.Editor">
      <HintPath>D:\TeachMeSkills\Diplom_TMS_shooter\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Model">
+     <HintPath>D:\TeachMeSkills\Diplom_TMS_shooter\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Timeline">
      <HintPath>D:\TeachMeSkills\Diplom_TMS_shooter\Library\ScriptAssemblies\Unity.Timeline.dll</HintPath>
@@ -748,9 +750,6 @@
      <Reference Include="Unity.VisualScripting.SettingsProvider.Editor">
      <HintPath>D:\TeachMeSkills\Diplom_TMS_shooter\Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll</HintPath>
      </Reference>
-     <Reference Include="UnityEngine.Advertisements">
-     <HintPath>D:\TeachMeSkills\Diplom_TMS_shooter\Library\ScriptAssemblies\UnityEngine.Advertisements.dll</HintPath>
-     </Reference>
      <Reference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection">
      <HintPath>D:\TeachMeSkills\Diplom_TMS_shooter\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll</HintPath>
      </Reference>
@@ -766,11 +765,11 @@
      <Reference Include="Unity.Rider.Editor">
      <HintPath>D:\TeachMeSkills\Diplom_TMS_shooter\Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
      </Reference>
-     <Reference Include="Unity.VisualScripting.Flow">
-     <HintPath>D:\TeachMeSkills\Diplom_TMS_shooter\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll</HintPath>
-     </Reference>
      <Reference Include="UnityEngine.UI">
      <HintPath>D:\TeachMeSkills\Diplom_TMS_shooter\Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.VisualScripting.Flow">
+     <HintPath>D:\TeachMeSkills\Diplom_TMS_shooter\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Services.Core">
      <HintPath>D:\TeachMeSkills\Diplom_TMS_shooter\Library\ScriptAssemblies\Unity.Services.Core.dll</HintPath>
@@ -802,17 +801,23 @@
      <Reference Include="Unity.Timeline.Editor">
      <HintPath>D:\TeachMeSkills\Diplom_TMS_shooter\Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
      </Reference>
-     <Reference Include="UnityEngine.Monetization">
-     <HintPath>D:\TeachMeSkills\Diplom_TMS_shooter\Library\ScriptAssemblies\UnityEngine.Monetization.dll</HintPath>
-     </Reference>
      <Reference Include="Unity.TestTools.CodeCoverage.Editor">
      <HintPath>D:\TeachMeSkills\Diplom_TMS_shooter\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.dll</HintPath>
      </Reference>
-     <Reference Include="UnityEngine.Advertisements.Editor">
-     <HintPath>D:\TeachMeSkills\Diplom_TMS_shooter\Library\ScriptAssemblies\UnityEngine.Advertisements.Editor.dll</HintPath>
-     </Reference>
      <Reference Include="Unity.VisualScripting.State">
      <HintPath>D:\TeachMeSkills\Diplom_TMS_shooter\Library\ScriptAssemblies\Unity.VisualScripting.State.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.Services.Analytics.Editor">
+     <HintPath>D:\TeachMeSkills\Diplom_TMS_shooter\Library\ScriptAssemblies\Unity.Services.Analytics.Editor.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.Services.Analytics">
+     <HintPath>D:\TeachMeSkills\Diplom_TMS_shooter\Library\ScriptAssemblies\Unity.Services.Analytics.dll</HintPath>
+     </Reference>
+     <Reference Include="UnityEngine.Advertisements">
+     <HintPath>D:\TeachMeSkills\Diplom_TMS_shooter\Library\ScriptAssemblies\UnityEngine.Advertisements.dll</HintPath>
+     </Reference>
+     <Reference Include="UnityEngine.Advertisements.Editor">
+     <HintPath>D:\TeachMeSkills\Diplom_TMS_shooter\Library\ScriptAssemblies\UnityEngine.Advertisements.Editor.dll</HintPath>
      </Reference>
   </ItemGroup>
   <ItemGroup>

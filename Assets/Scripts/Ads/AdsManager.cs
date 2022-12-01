@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.Advertisements;
 
@@ -9,10 +10,15 @@ namespace Ads
         [SerializeField] string _iOSGameId;
         [SerializeField] bool _testMode = true;
         private string _gameId;
- 
+        private InterstitialAdExample _interstitialAdExample;
+
+        public static event Action OnShowAds;
+    
+
         void Awake()
         {
             InitializeAds();
+            _interstitialAdExample = GetComponent<InterstitialAdExample>();
         }
  
         public void InitializeAds()
@@ -26,6 +32,7 @@ namespace Ads
         public void OnInitializationComplete()
         {
             Debug.Log("Unity Ads initialization complete.");
+            _interstitialAdExample.LoadAd();
         }
  
         public void OnInitializationFailed(UnityAdsInitializationError error, string message)

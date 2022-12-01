@@ -1,3 +1,4 @@
+using Ads;
 using Characters;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -17,7 +18,9 @@ public class GameManager : MonoBehaviour
     [SerializeField] private Text pauseScoreText;
     [SerializeField] private Text highScoreText;
     [SerializeField] private Text fpsShowText;
+    [SerializeField] private AnalyticsManager analyticsManager;
 
+    private InterstitialAdExample _interstitialAdExample;
     private bool _isMusicOn;
     private int _score;
     private int _highScore;
@@ -37,18 +40,26 @@ public class GameManager : MonoBehaviour
         _score = 0;
         EnemyBase.OnEnemyDeadScore += OnEnemyKilled;
         Player.OnPlayerDead += OnPlayerDeath;
+        AdsManager.OnShowAds += ShowInterstitialAds;
+        _interstitialAdExample = FindObjectOfType<AdsManager>().GetComponent<InterstitialAdExample>();
     }
 
     private void OnDisable()
     {
         EnemyBase.OnEnemyDeadScore -= OnEnemyKilled;
         Player.OnPlayerDead -= OnPlayerDeath;
+        AdsManager.OnShowAds -= ShowInterstitialAds;
     }
 
     private void Update()
     {
         ShowScore();
         ShowFPS();
+    }
+    
+    private void ShowInterstitialAds()
+    {
+        _interstitialAdExample.ShowAd();
     }
 
     public void CheckHighScore()
@@ -98,6 +109,8 @@ public class GameManager : MonoBehaviour
     {
         EnemyBase.OnEnemyDeadScore -= OnEnemyKilled;
         OpenFailPanel();
+        analyticsManager.OnGameFail();
+        ShowInterstitialAds();
     }
         
     public void OpenPausePanel()
@@ -159,6 +172,7 @@ public class GameManager : MonoBehaviour
     public void GameScene()
     {
         SceneManager.LoadScene(1);
+        analyticsManager.OnNewGameStart();
     }
 
     public void MenuScene()
