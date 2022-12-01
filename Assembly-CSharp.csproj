@@ -78,6 +78,7 @@
      <Compile Include="Assets\Scripts\Characters\EnemyPlayer.cs" />
      <Compile Include="Assets\Scripts\Guns\Pistol.cs" />
      <Compile Include="Assets\Scripts\Characters\Player.cs" />
+     <Compile Include="Assets\Scripts\Ads\AdsManager.cs" />
      <Reference Include="UnityEngine">
      <HintPath>D:\Unity\2021.3.11f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
      </Reference>
