@@ -1,4 +1,3 @@
-using System;
 using DG.Tweening;
 using UnityEngine;
 
@@ -17,6 +16,16 @@ namespace Ui
             scaleTo = originScale * multiplyScale;
 
             transform.DOScale(scaleTo, duration).SetEase(Ease.InOutSine).SetLoops(-1, LoopType.Yoyo).SetUpdate(true);
+        }
+        
+        void OnDestroy()
+        {
+            DOTween.Kill(transform);
+            DOTween.Kill(gameObject);
+            foreach (Transform child in transform)
+            {
+                DOTween.Kill(child);
+            }
         }
     }
 }

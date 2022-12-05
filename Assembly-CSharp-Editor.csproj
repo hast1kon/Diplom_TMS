@@ -302,27 +302,6 @@
      <Reference Include="UnityEditor.WindowsStandalone.Extensions">
      <HintPath>D:\Unity\2021.3.11f1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
      </Reference>
-     <Reference Include="Unity.VisualScripting.IonicZip">
-     <HintPath>D:\TeachMeSkills\Diplom_TMS_shooter\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll</HintPath>
-     </Reference>
-     <Reference Include="Google.VersionHandler">
-     <HintPath>D:\TeachMeSkills\Diplom_TMS_shooter\Assets\MobileDependencyResolver\Editor\Google.VersionHandler.dll</HintPath>
-     </Reference>
-     <Reference Include="Google.VersionHandlerImpl">
-     <HintPath>D:\TeachMeSkills\Diplom_TMS_shooter\Assets\MobileDependencyResolver\Editor\Google.VersionHandlerImpl.dll</HintPath>
-     </Reference>
-     <Reference Include="log4netPlastic">
-     <HintPath>D:\TeachMeSkills\Diplom_TMS_shooter\Library\PackageCache\com.unity.collab-proxy@1.17.2\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>
-     </Reference>
-     <Reference Include="DOTween">
-     <HintPath>D:\TeachMeSkills\Diplom_TMS_shooter\Assets\Plugins\Demigiant\DOTween\DOTween.dll</HintPath>
-     </Reference>
-     <Reference Include="ReportGeneratorMerged">
-     <HintPath>D:\TeachMeSkills\Diplom_TMS_shooter\Library\PackageCache\com.unity.testtools.codecoverage@1.0.1\lib\ReportGenerator\ReportGeneratorMerged.dll</HintPath>
-     </Reference>
-     <Reference Include="Newtonsoft.Json">
-     <HintPath>D:\TeachMeSkills\Diplom_TMS_shooter\Library\PackageCache\com.unity.nuget.newtonsoft-json@3.0.2\Runtime\Newtonsoft.Json.dll</HintPath>
-     </Reference>
      <Reference Include="Unity.Plastic.Newtonsoft.Json">
      <HintPath>D:\TeachMeSkills\Diplom_TMS_shooter\Library\PackageCache\com.unity.collab-proxy@1.17.2\Lib\Editor\PlasticSCM\Unity.Plastic.Newtonsoft.Json.dll</HintPath>
      </Reference>
@@ -335,14 +314,35 @@
      <Reference Include="DOTweenEditor">
      <HintPath>D:\TeachMeSkills\Diplom_TMS_shooter\Assets\Plugins\Demigiant\DOTween\Editor\DOTweenEditor.dll</HintPath>
      </Reference>
+     <Reference Include="Unity.VisualScripting.IonicZip">
+     <HintPath>D:\TeachMeSkills\Diplom_TMS_shooter\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll</HintPath>
+     </Reference>
      <Reference Include="Unity.VisualScripting.TextureAssets">
      <HintPath>D:\TeachMeSkills\Diplom_TMS_shooter\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\EditorAssetResources\Unity.VisualScripting.TextureAssets.dll</HintPath>
+     </Reference>
+     <Reference Include="Google.VersionHandler">
+     <HintPath>D:\TeachMeSkills\Diplom_TMS_shooter\Assets\MobileDependencyResolver\Editor\Google.VersionHandler.dll</HintPath>
+     </Reference>
+     <Reference Include="Google.VersionHandlerImpl">
+     <HintPath>D:\TeachMeSkills\Diplom_TMS_shooter\Assets\MobileDependencyResolver\Editor\Google.VersionHandlerImpl.dll</HintPath>
+     </Reference>
+     <Reference Include="log4netPlastic">
+     <HintPath>D:\TeachMeSkills\Diplom_TMS_shooter\Library\PackageCache\com.unity.collab-proxy@1.17.2\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>
      </Reference>
      <Reference Include="Google.JarResolver">
      <HintPath>D:\TeachMeSkills\Diplom_TMS_shooter\Assets\MobileDependencyResolver\Editor\Google.JarResolver.dll</HintPath>
      </Reference>
+     <Reference Include="DOTween">
+     <HintPath>D:\TeachMeSkills\Diplom_TMS_shooter\Assets\Plugins\Demigiant\DOTween\DOTween.dll</HintPath>
+     </Reference>
+     <Reference Include="ReportGeneratorMerged">
+     <HintPath>D:\TeachMeSkills\Diplom_TMS_shooter\Library\PackageCache\com.unity.testtools.codecoverage@1.0.1\lib\ReportGenerator\ReportGeneratorMerged.dll</HintPath>
+     </Reference>
      <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
      <HintPath>D:\TeachMeSkills\Diplom_TMS_shooter\Library\PackageCache\com.unity.visualscripting@1.7.8\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
+     </Reference>
+     <Reference Include="Newtonsoft.Json">
+     <HintPath>D:\TeachMeSkills\Diplom_TMS_shooter\Library\PackageCache\com.unity.nuget.newtonsoft-json@3.0.2\Runtime\Newtonsoft.Json.dll</HintPath>
      </Reference>
      <Reference Include="unityplastic">
      <HintPath>D:\TeachMeSkills\Diplom_TMS_shooter\Library\PackageCache\com.unity.collab-proxy@1.17.2\Lib\Editor\PlasticSCM\unityplastic.dll</HintPath>
@@ -749,11 +749,11 @@
      <Reference Include="Unity.Performance.Profile-Analyzer.Editor">
      <HintPath>D:\TeachMeSkills\Diplom_TMS_shooter\Library\ScriptAssemblies\Unity.Performance.Profile-Analyzer.Editor.dll</HintPath>
      </Reference>
-     <Reference Include="Unity.VisualStudio.Editor">
-     <HintPath>D:\TeachMeSkills\Diplom_TMS_shooter\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
-     </Reference>
      <Reference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Model">
      <HintPath>D:\TeachMeSkills\Diplom_TMS_shooter\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.VisualStudio.Editor">
+     <HintPath>D:\TeachMeSkills\Diplom_TMS_shooter\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Timeline">
      <HintPath>D:\TeachMeSkills\Diplom_TMS_shooter\Library\ScriptAssemblies\Unity.Timeline.dll</HintPath>
@@ -767,8 +767,17 @@
      <Reference Include="Unity.VisualScripting.State.Editor">
      <HintPath>D:\TeachMeSkills\Diplom_TMS_shooter\Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll</HintPath>
      </Reference>
+     <Reference Include="Unity.Services.Analytics.Editor">
+     <HintPath>D:\TeachMeSkills\Diplom_TMS_shooter\Library\ScriptAssemblies\Unity.Services.Analytics.Editor.dll</HintPath>
+     </Reference>
      <Reference Include="Unity.VisualScripting.SettingsProvider.Editor">
      <HintPath>D:\TeachMeSkills\Diplom_TMS_shooter\Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.Services.Analytics">
+     <HintPath>D:\TeachMeSkills\Diplom_TMS_shooter\Library\ScriptAssemblies\Unity.Services.Analytics.dll</HintPath>
+     </Reference>
+     <Reference Include="UnityEngine.Advertisements">
+     <HintPath>D:\TeachMeSkills\Diplom_TMS_shooter\Library\ScriptAssemblies\UnityEngine.Advertisements.dll</HintPath>
      </Reference>
      <Reference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection">
      <HintPath>D:\TeachMeSkills\Diplom_TMS_shooter\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll</HintPath>
@@ -785,11 +794,11 @@
      <Reference Include="Unity.Rider.Editor">
      <HintPath>D:\TeachMeSkills\Diplom_TMS_shooter\Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
      </Reference>
-     <Reference Include="UnityEngine.UI">
-     <HintPath>D:\TeachMeSkills\Diplom_TMS_shooter\Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
-     </Reference>
      <Reference Include="Unity.VisualScripting.Flow">
      <HintPath>D:\TeachMeSkills\Diplom_TMS_shooter\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll</HintPath>
+     </Reference>
+     <Reference Include="UnityEngine.UI">
+     <HintPath>D:\TeachMeSkills\Diplom_TMS_shooter\Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Services.Core">
      <HintPath>D:\TeachMeSkills\Diplom_TMS_shooter\Library\ScriptAssemblies\Unity.Services.Core.dll</HintPath>
@@ -824,20 +833,11 @@
      <Reference Include="Unity.TestTools.CodeCoverage.Editor">
      <HintPath>D:\TeachMeSkills\Diplom_TMS_shooter\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.dll</HintPath>
      </Reference>
-     <Reference Include="Unity.VisualScripting.State">
-     <HintPath>D:\TeachMeSkills\Diplom_TMS_shooter\Library\ScriptAssemblies\Unity.VisualScripting.State.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.Services.Analytics.Editor">
-     <HintPath>D:\TeachMeSkills\Diplom_TMS_shooter\Library\ScriptAssemblies\Unity.Services.Analytics.Editor.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.Services.Analytics">
-     <HintPath>D:\TeachMeSkills\Diplom_TMS_shooter\Library\ScriptAssemblies\Unity.Services.Analytics.dll</HintPath>
-     </Reference>
-     <Reference Include="UnityEngine.Advertisements">
-     <HintPath>D:\TeachMeSkills\Diplom_TMS_shooter\Library\ScriptAssemblies\UnityEngine.Advertisements.dll</HintPath>
-     </Reference>
      <Reference Include="UnityEngine.Advertisements.Editor">
      <HintPath>D:\TeachMeSkills\Diplom_TMS_shooter\Library\ScriptAssemblies\UnityEngine.Advertisements.Editor.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.VisualScripting.State">
+     <HintPath>D:\TeachMeSkills\Diplom_TMS_shooter\Library\ScriptAssemblies\Unity.VisualScripting.State.dll</HintPath>
      </Reference>
   </ItemGroup>
   <ItemGroup>

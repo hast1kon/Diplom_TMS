@@ -7,15 +7,14 @@ namespace Characters
         [SerializeField] private float moveSpeed = 5f;
         [SerializeField] private Animator animatorMainPlayer;
         [SerializeField] private Rigidbody _myRigidbody;
-        private Vector3 _velocity;
         [SerializeField] private Camera _viewCameraRay;
         
+        private Vector3 _velocity;
         private static readonly int IsRun = Animator.StringToHash("IsRun");
     
         void Start()
         {
             _myRigidbody = GetComponent<Rigidbody>();
-        
         }
 
         public void Move(Vector3 mVelocity)

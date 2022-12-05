@@ -13,12 +13,17 @@ namespace Characters
         public static event Action OnEnemyDeadScore;
         public void TakeDamage(int damageValue)
         {
+            if (health > 0)
+            {
+                unityEventOnTakeDamage?.Invoke();
+            }
+            
             health -= damageValue;
+            
             if (health<=0)
             {
                 EnemyDie();
             }
-            unityEventOnTakeDamage?.Invoke();
         }
 
         public void EnemyDie()

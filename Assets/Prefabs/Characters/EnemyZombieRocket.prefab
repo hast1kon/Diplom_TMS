@@ -685,6 +685,7 @@ MonoBehaviour:
   scaleTo: {x: 1, y: 1, z: 1}
   duration: 1
   multiplyScale: 1.1
+  target: {fileID: 6233718134190703822}
 --- !u!1 &6233718134469947998
 GameObject:
   m_ObjectHideFlags: 0

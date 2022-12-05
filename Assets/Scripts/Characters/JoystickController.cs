@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Ui
+namespace Characters
 {
     public class JoystickController : MonoBehaviour
     {
