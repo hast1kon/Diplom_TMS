@@ -6,7 +6,8 @@ namespace Others
     public class Blink : MonoBehaviour
     {
         [SerializeField] private Renderer[] Renderers;
-        
+        private static readonly int EmissionColor = Shader.PropertyToID("_EmissionColor");
+
         public void StartBlink()
         {
             StartCoroutine(BlinkEffect());
@@ -20,7 +21,7 @@ namespace Others
                 {
                     for (int m = 0; m < Renderers[i].materials.Length; m++)
                     {
-                        Renderers[i].materials[m].SetColor("_EmissionColor", new Color(Mathf.Sin(t * 30) * 0.5f + 0.5f, 0, 0, 0));
+                        Renderers[i].materials[m].SetColor(EmissionColor, new Color(Mathf.Sin(t * 30) * 0.5f + 0.5f, 0, 0, 0));
                     }
                 }
                 yield return null;

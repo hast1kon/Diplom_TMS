@@ -182,6 +182,10 @@ MonoBehaviour:
   pauseScoreText: {fileID: 1900467249}
   highScoreText: {fileID: 426853450}
   fpsShowText: {fileID: 1986412334}
+  textWaveNumber: {fileID: 1644228842}
+  textEnemyNumber: {fileID: 1181681546}
+  enemyCount: 0
+  waveNumber: 1
   analyticsManager: {fileID: 2137233605}
 --- !u!1001 &28922693
 PrefabInstance:
@@ -4103,6 +4107,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: AimJoystick
       objectReference: {fileID: 0}
+    - target: {fileID: 2929252283123773939, guid: aaa2c939c0359ac4dbce3f49e8b90252, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2929252285020697096, guid: aaa2c939c0359ac4dbce3f49e8b90252, type: 3}
       propertyPath: m_SizeDelta.x
       value: 100
@@ -6167,6 +6175,10 @@ PrefabInstance:
     - target: {fileID: 2929252283123773939, guid: aaa2c939c0359ac4dbce3f49e8b90252, type: 3}
       propertyPath: m_Name
       value: MoveJoystick
+      objectReference: {fileID: 0}
+    - target: {fileID: 2929252283123773939, guid: aaa2c939c0359ac4dbce3f49e8b90252, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2929252285020697096, guid: aaa2c939c0359ac4dbce3f49e8b90252, type: 3}
       propertyPath: m_SizeDelta.x
@@ -16008,7 +16020,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc8cbdb8a06d46168bc10775f7b929d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 4726815599142643519, guid: 04cbcfcfdeaa64d44b07474aef2e4fbb, type: 3}
   spawn: {fileID: 1542080179908368990}
   bulletSpeed: 30
   shotPeriod: 0.3
@@ -16640,7 +16651,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3e202c0732145e590e71999caf9e314, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 4726815599142643519, guid: 04cbcfcfdeaa64d44b07474aef2e4fbb, type: 3}
   spawn: {fileID: 1542080180051172278}
   bulletSpeed: 30
   shotPeriod: 0.12

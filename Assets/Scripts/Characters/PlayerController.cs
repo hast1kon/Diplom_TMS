@@ -30,7 +30,6 @@ namespace Characters
         void FixedUpdate()
         {
             _myRigidbody.MovePosition(_myRigidbody.position + _velocity * Time.fixedDeltaTime);
-        
         }
         
         private void Update()

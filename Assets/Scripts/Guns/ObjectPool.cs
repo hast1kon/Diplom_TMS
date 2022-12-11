@@ -8,7 +8,7 @@ namespace Guns
         [SerializeField] private GameObject bulletPrefab;
         private List<GameObject> pooledObjects = new List<GameObject>();
         public static ObjectPool Instance;
-        private int amountPool = 20;
+        private int amountPool = 10;
         private void Awake()
         {
             if (Instance==null)

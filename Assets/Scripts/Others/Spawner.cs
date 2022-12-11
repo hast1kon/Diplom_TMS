@@ -1,4 +1,4 @@
-using System;
+using System.Collections;
 using Characters;
 using UnityEngine;
 using UnityEngine.UI;
@@ -16,6 +16,7 @@ namespace Others
         [SerializeField] private int waveNumber = 1;
         [SerializeField] private Text textWaveNumber;
         [SerializeField] private Text textEnemyNumber;
+        private float _refreshRateCheck = 0.25f;
         private float randomPosY = 0.5f;
 
         private void Start()
@@ -24,11 +25,16 @@ namespace Others
             SpawnAmmo();
             SpawnHealth();
 
+            StartCoroutine(CheckStateSpawner());
         }
 
-        private void Update()
+        IEnumerator CheckStateSpawner()
         {
-            InstantiateSpawner();
+            while (waveNumber >0)
+            {
+                InstantiateSpawner();
+                yield return new WaitForSeconds(_refreshRateCheck);
+            }
         }
 
         public void InstantiateSpawner()

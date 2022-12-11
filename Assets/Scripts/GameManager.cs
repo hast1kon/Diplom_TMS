@@ -1,3 +1,4 @@
+using System.Collections;
 using Ads;
 using Characters;
 using UnityEngine;
@@ -24,6 +25,7 @@ public class GameManager : MonoBehaviour
     private bool _isMusicOn;
     private int _score;
     private int _highScore;
+    private float _refreshRateCheck = 0.25f;
         
     private float _timerFPS, _refreshFPS, _avgFrameRateFPS;
     private string _displayFPS = "{0} FPS";
@@ -42,7 +44,9 @@ public class GameManager : MonoBehaviour
         Player.OnPlayerDead += OnPlayerDeath;
         AdsManager.OnShowAds += ShowInterstitialAds;
         _interstitialAdExample = FindObjectOfType<AdsManager>().GetComponent<InterstitialAdExample>();
+        StartCoroutine(UpdateStats());
     }
+    
 
     private void OnDisable()
     {
@@ -51,9 +55,17 @@ public class GameManager : MonoBehaviour
         AdsManager.OnShowAds -= ShowInterstitialAds;
     }
 
+    IEnumerator UpdateStats()
+    {
+        while (true)
+        {
+            ShowScore();
+            yield return new WaitForSeconds(_refreshRateCheck);
+        }
+    }
+    
     private void Update()
     {
-        ShowScore();
         ShowFPS();
     }
     
