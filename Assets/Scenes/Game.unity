@@ -1977,9 +1977,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df5f66174c714812ac580868a5cf450b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyPrefab: {fileID: 3085416632369999746, guid: bea4f48c96b819b48a06c2b964ca3d81, type: 3}
-  enemyPrefab2: {fileID: 8511984570838728579, guid: c440774e48a530645a54a89979893fad, type: 3}
-  enemyPrefab3: {fileID: 2050484098, guid: e2be1c77e8cfa6948b787f6608acd35f, type: 3}
+  enemyPlayers:
+  - {fileID: 3085416632369999746, guid: bea4f48c96b819b48a06c2b964ca3d81, type: 3}
+  - {fileID: 8511984570838728579, guid: c440774e48a530645a54a89979893fad, type: 3}
+  - {fileID: 2050484098, guid: e2be1c77e8cfa6948b787f6608acd35f, type: 3}
   ammoPrefab: {fileID: 7587269369038714584, guid: 13ee44e347f77d848a250c995656f794, type: 3}
   healthPrefab: {fileID: 4773873718898838892, guid: ea3e67b725675ce449d36b93556b5cdf, type: 3}
   spawnRange: 24
@@ -1987,10 +1988,6 @@ MonoBehaviour:
   waveNumber: 1
   textWaveNumber: {fileID: 1644228842}
   textEnemyNumber: {fileID: 1181681546}
-  enemyPlayers:
-  - {fileID: 3085416632369999746, guid: bea4f48c96b819b48a06c2b964ca3d81, type: 3}
-  - {fileID: 8511984570838728579, guid: c440774e48a530645a54a89979893fad, type: 3}
-  - {fileID: 2050484098, guid: e2be1c77e8cfa6948b787f6608acd35f, type: 3}
 --- !u!4 &474609184
 Transform:
   m_ObjectHideFlags: 0
@@ -4914,6 +4911,51 @@ MonoBehaviour:
   m_BeforeTransparentBundles: []
   m_BeforeStackBundles: []
   m_AfterStackBundles: []
+--- !u!1 &977726840
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 977726842}
+  - component: {fileID: 977726841}
+  m_Layer: 0
+  m_Name: ObjectPool
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &977726841
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 977726840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee44b6a465f8418db5716492a0639a1c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletPrefab: {fileID: 4726815599142643519, guid: 04cbcfcfdeaa64d44b07474aef2e4fbb, type: 3}
+--- !u!4 &977726842
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 977726840}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &989161628 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8549604020307518984, guid: 2cdf82fb7d177ba47bc7c2e1241742a5, type: 3}
@@ -20982,10 +21024,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1466375469}
     - target: {fileID: 5227843988674745598, guid: c550ab9d6a4fc804eaac598529c9aaf3, type: 3}
-      propertyPath: bulletsPanel
-      value: 
-      objectReference: {fileID: 742295638}
-    - target: {fileID: 5227843988674745598, guid: c550ab9d6a4fc804eaac598529c9aaf3, type: 3}
       propertyPath: joystickShot
       value: 
       objectReference: {fileID: 892527702}
@@ -20993,10 +21031,6 @@ PrefabInstance:
       propertyPath: bulletsText
       value: 
       objectReference: {fileID: 1039165644}
-    - target: {fileID: 5227843989186503563, guid: c550ab9d6a4fc804eaac598529c9aaf3, type: 3}
-      propertyPath: bulletsPanel
-      value: 
-      objectReference: {fileID: 742295638}
     - target: {fileID: 5227843989186503563, guid: c550ab9d6a4fc804eaac598529c9aaf3, type: 3}
       propertyPath: joystickShot
       value: 

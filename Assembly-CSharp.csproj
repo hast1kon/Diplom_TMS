@@ -79,6 +79,7 @@
      <Compile Include="Assets\Scripts\Others\MakeDamageOnTrigger.cs" />
      <Compile Include="Assets\Scripts\Characters\EnemyPlayer.cs" />
      <Compile Include="Assets\Scripts\Guns\Pistol.cs" />
+     <Compile Include="Assets\Scripts\Guns\ObjectPool.cs" />
      <Compile Include="Assets\Scripts\Ads\AnalyticsManager.cs" />
      <Compile Include="Assets\Scripts\Characters\Player.cs" />
      <Reference Include="UnityEngine">
