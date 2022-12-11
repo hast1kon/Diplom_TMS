@@ -134,7 +134,6 @@ public class GameManager : MonoBehaviour
         failPanel.SetActive(false);
         musicGame.Play();
         musicMenu.Stop();
-        
         Time.timeScale = 1f;
     }
         
@@ -146,10 +145,8 @@ public class GameManager : MonoBehaviour
         menuPanel.SetActive(false);
         pausePanel.SetActive(false);
         failPanel.SetActive(false);
-            
         musicGame.Play();
         musicMenu.Stop();
-            
         Time.timeScale = 1f;
     }
 
@@ -186,10 +183,8 @@ public class GameManager : MonoBehaviour
         pausePanel.SetActive(false);
         menuPanel.SetActive(false);
         failPanel.SetActive(true);
-        
         musicGame.Stop();
         musicMenu.Play();
-            
         Time.timeScale = 0f;
     }
 

@@ -1325,7 +1325,6 @@ MonoBehaviour:
   scaleTo: {x: 0, y: 0, z: 0}
   duration: 2
   multiplyScale: 1.1
-  target: {fileID: 0}
 --- !u!1 &317527595
 GameObject:
   m_ObjectHideFlags: 0
@@ -1402,11 +1401,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 317527595}
   m_CullTransparentMesh: 1
---- !u!1 &341717494 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8821390941714789747, guid: b12412f28ab81264888e1f566f9f390c, type: 3}
-  m_PrefabInstance: {fileID: 8821390941929560382}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &395510952
 GameObject:
   m_ObjectHideFlags: 0
@@ -1993,6 +1987,10 @@ MonoBehaviour:
   waveNumber: 1
   textWaveNumber: {fileID: 1644228842}
   textEnemyNumber: {fileID: 1181681546}
+  enemyPlayers:
+  - {fileID: 3085416632369999746, guid: bea4f48c96b819b48a06c2b964ca3d81, type: 3}
+  - {fileID: 8511984570838728579, guid: c440774e48a530645a54a89979893fad, type: 3}
+  - {fileID: 2050484098, guid: e2be1c77e8cfa6948b787f6608acd35f, type: 3}
 --- !u!4 &474609184
 Transform:
   m_ObjectHideFlags: 0
@@ -3201,7 +3199,6 @@ MonoBehaviour:
   scaleTo: {x: 0, y: 0, z: 0}
   duration: 2
   multiplyScale: 2
-  target: {fileID: 0}
 --- !u!1001 &753394114
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4568,7 +4565,6 @@ MonoBehaviour:
   scaleTo: {x: 0, y: 0, z: 0}
   duration: 2
   multiplyScale: 1.5
-  target: {fileID: 0}
 --- !u!114 &918462022
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5082,7 +5078,6 @@ MonoBehaviour:
   scaleTo: {x: 0, y: 0, z: 0}
   duration: 2
   multiplyScale: 2
-  target: {fileID: 0}
 --- !u!1001 &990965769
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6585,7 +6580,6 @@ MonoBehaviour:
   scaleTo: {x: 0, y: 0, z: 0}
   duration: 2
   multiplyScale: 1.1
-  target: {fileID: 0}
 --- !u!1 &1383754195
 GameObject:
   m_ObjectHideFlags: 0
@@ -10832,7 +10826,6 @@ MonoBehaviour:
   scaleTo: {x: 0, y: 0, z: 0}
   duration: 2
   multiplyScale: 1.05
-  target: {fileID: 341717494}
 --- !u!1 &2130093020
 GameObject:
   m_ObjectHideFlags: 0

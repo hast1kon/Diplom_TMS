@@ -17,7 +17,7 @@ namespace Guns
 
         private void Update()
         {
-            transform.position += Time.deltaTime * transform.forward * speed;
+            transform.position += transform.forward * (Time.deltaTime * speed);
             Vector3 toPlayer = _playerTransform.position - transform.position;
             Quaternion targetRotation=Quaternion.LookRotation(toPlayer,Vector3.forward);
 

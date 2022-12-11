@@ -9,12 +9,9 @@ namespace Others
 
         private void OnTriggerEnter(Collider other)
         {
-            if (other.attachedRigidbody)
+            if (other.attachedRigidbody?.GetComponent<Player>())
             {
-                if (other.attachedRigidbody.GetComponent<Player>())
-                {
-                    other.attachedRigidbody.GetComponent<Player>().TakeDamage(damageValue);
-                }
+                other.attachedRigidbody.GetComponent<Player>().TakeDamage(damageValue);
             }
         }
     }

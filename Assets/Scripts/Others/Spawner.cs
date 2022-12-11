@@ -1,3 +1,4 @@
+using System;
 using Characters;
 using UnityEngine;
 using UnityEngine.UI;
@@ -7,9 +8,7 @@ namespace Others
 {
     public class Spawner : MonoBehaviour
     {
-        [SerializeField] private EnemyPlayer enemyPrefab;
-        [SerializeField] private EnemyPlayer enemyPrefab2;
-        [SerializeField] private EnemyPlayer enemyPrefab3;
+        [SerializeField] private EnemyPlayer[] enemyPlayers;
         [SerializeField] private GameObject ammoPrefab;
         [SerializeField] private GameObject healthPrefab;
         [SerializeField] private float spawnRange = 15f;
@@ -17,20 +16,19 @@ namespace Others
         [SerializeField] private int waveNumber = 1;
         [SerializeField] private Text textWaveNumber;
         [SerializeField] private Text textEnemyNumber;
-        private float posY = 0.5f;
-        
+        private float randomPosY = 0.5f;
 
         private void Start()
         {
             SpawnEnemyWave(waveNumber);
             SpawnAmmo();
             SpawnHealth();
+
         }
 
         private void Update()
         {
             InstantiateSpawner();
-            
         }
 
         public void InstantiateSpawner()
@@ -42,9 +40,8 @@ namespace Others
                 waveNumber++;
                 textWaveNumber.text = waveNumber.ToString();
                 SpawnEnemyWave(waveNumber);
-                var rotation = enemyPrefab.transform.rotation;
-                Instantiate(ammoPrefab, GenerateSpawnPosition(), rotation);
-                Instantiate(healthPrefab, GenerateSpawnPosition(), rotation);
+                SpawnAmmo();
+                SpawnHealth();
             }
         }
 
@@ -61,9 +58,10 @@ namespace Others
         {
             for (int i = 0; i < enemiesToSpawn; i++)
             {
-                Instantiate(enemyPrefab, GenerateSpawnPosition(), Quaternion.identity);
-                Instantiate(enemyPrefab2, GenerateSpawnPosition(), Quaternion.identity);
-                Instantiate(enemyPrefab3, GenerateSpawnPosition(), Quaternion.identity);
+                for (int j = 0; j < enemyPlayers.Length; j++)
+                {
+                    Instantiate(enemyPlayers[j], GenerateSpawnPosition(), Quaternion.identity);
+                }
             }
         }
 
@@ -72,7 +70,7 @@ namespace Others
             float spawnPosX = Random.Range(spawnRange, -spawnRange);
             float spawnPosZ = Random.Range(spawnRange, -spawnRange);
             
-            Vector3 randomPos=new Vector3(spawnPosX,posY,spawnPosZ);
+            Vector3 randomPos=new Vector3(spawnPosX,randomPosY,spawnPosZ);
             return randomPos;
         }
     }

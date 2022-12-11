@@ -11,15 +11,12 @@ namespace Others
 
         private void OnTriggerEnter(Collider other)
         {
-            if (other.attachedRigidbody)
+            if (other.attachedRigidbody?.GetComponent<Bullet>())
             {
-                if (other.attachedRigidbody.GetComponent<Bullet>())
-                {
-                    enemyHealth.TakeDamage(1);
-                }
+                enemyHealth.TakeDamage(1);
             }
 
-            if (dieOnAnyCollision==true)
+            if (dieOnAnyCollision)
             {
                 if (other.isTrigger==false)
                 {

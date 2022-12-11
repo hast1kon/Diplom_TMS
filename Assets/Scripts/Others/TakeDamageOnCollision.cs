@@ -10,19 +10,15 @@ namespace Others
         public bool dieOnAnyCollision;
         private void OnCollisionEnter(Collision collision)
         {
-            if (collision.rigidbody)
+            if (collision.rigidbody?.GetComponent<Bullet>())
             {
-                if (collision.rigidbody.GetComponent<Bullet>())
-                {
-                    enemyHealth.TakeDamage(1);
-                }
+                enemyHealth.TakeDamage(1);
             }
 
             if (dieOnAnyCollision)
             {
                 enemyHealth.TakeDamage(1000);
             }
-        
         }
     }
 }

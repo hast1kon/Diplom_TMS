@@ -1217,8 +1217,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f9f39f62a4067b49ac23fdd1fd3f2ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _androidAdUnitId: Interstitial_Android
-  _iOsAdUnitId: Interstitial_iOS
+  androidAdUnitId: Interstitial_Android
+  iOsAdUnitId: Interstitial_iOS
 --- !u!114 &311930812
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4714,7 +4714,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.29982445, y: -0.55234, z: 0.22215936, w: 0.74543357}
+  m_LocalRotation: {x: 0.29982445, y: -0.5523399, z: 0.22215931, w: 0.74543357}
   m_LocalPosition: {x: 12.61, y: 13.79, z: -7.41}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -6334,7 +6334,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1324002286}
-  m_LocalRotation: {x: 0.29982445, y: -0.55234, z: 0.22215936, w: 0.74543357}
+  m_LocalRotation: {x: 0.29982445, y: -0.5523399, z: 0.22215931, w: 0.74543357}
   m_LocalPosition: {x: 12.61, y: 13.79, z: -7.41}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
