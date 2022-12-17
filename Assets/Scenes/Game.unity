@@ -1974,7 +1974,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 474609182}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: df5f66174c714812ac580868a5cf450b, type: 3}
+  m_Script: {fileID: 11500000, guid: 3e11d2da7194bff4293c3d7bbd42bccc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   enemyPlayers:
@@ -1983,8 +1983,8 @@ MonoBehaviour:
   - {fileID: 2050484098, guid: e2be1c77e8cfa6948b787f6608acd35f, type: 3}
   ammoPrefab: {fileID: 7587269369038714584, guid: 13ee44e347f77d848a250c995656f794, type: 3}
   healthPrefab: {fileID: 4773873718898838892, guid: ea3e67b725675ce449d36b93556b5cdf, type: 3}
-  spawnRange: 24
-  enemyCount: 1
+  spawnRange: 15
+  enemyCount: 3
   waveNumber: 1
   textWaveNumber: {fileID: 1644228842}
   textEnemyNumber: {fileID: 1181681546}
@@ -20996,6 +20996,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5227843987639129990, guid: c550ab9d6a4fc804eaac598529c9aaf3, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5227843987639129990, guid: c550ab9d6a4fc804eaac598529c9aaf3, type: 3}
       propertyPath: joystickAim
       value: 
       objectReference: {fileID: 892527702}
@@ -21003,6 +21007,10 @@ PrefabInstance:
       propertyPath: joystickMove
       value: 
       objectReference: {fileID: 1223593036}
+    - target: {fileID: 5227843987639129992, guid: c550ab9d6a4fc804eaac598529c9aaf3, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5227843987639129992, guid: c550ab9d6a4fc804eaac598529c9aaf3, type: 3}
       propertyPath: _viewCameraRay
       value: 
@@ -21024,6 +21032,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1466375469}
     - target: {fileID: 5227843988674745598, guid: c550ab9d6a4fc804eaac598529c9aaf3, type: 3}
+      propertyPath: BulletsPanel
+      value: 
+      objectReference: {fileID: 742295638}
+    - target: {fileID: 5227843988674745598, guid: c550ab9d6a4fc804eaac598529c9aaf3, type: 3}
       propertyPath: joystickShot
       value: 
       objectReference: {fileID: 892527702}
@@ -21031,6 +21043,14 @@ PrefabInstance:
       propertyPath: bulletsText
       value: 
       objectReference: {fileID: 1039165644}
+    - target: {fileID: 5227843989186503563, guid: c550ab9d6a4fc804eaac598529c9aaf3, type: 3}
+      propertyPath: BulletsPanel
+      value: 
+      objectReference: {fileID: 742295638}
+    - target: {fileID: 5227843989186503563, guid: c550ab9d6a4fc804eaac598529c9aaf3, type: 3}
+      propertyPath: bulletsPanel
+      value: 
+      objectReference: {fileID: 742295638}
     - target: {fileID: 5227843989186503563, guid: c550ab9d6a4fc804eaac598529c9aaf3, type: 3}
       propertyPath: joystickShot
       value: 

@@ -44,6 +44,7 @@
      <Compile Include="Assets\Scripts\Characters\PlayerController.cs" />
      <Compile Include="Assets\Scripts\Others\TakeDamageOnCollision.cs" />
      <Compile Include="Assets\Scripts\Guns\Automat.cs" />
+     <Compile Include="Assets\Scripts\Others\Spawner.cs" />
      <Compile Include="Assets\Scripts\Others\SetTriggerEveryNSeconds.cs" />
      <Compile Include="Assets\Joystick Pack\Scripts\Joysticks\FixedJoystick.cs" />
      <Compile Include="Assets\Joystick Pack\Scripts\Joysticks\VariableJoystick.cs" />
@@ -56,6 +57,7 @@
      <Compile Include="Assets\Scripts\Others\Rotate.cs" />
      <Compile Include="Assets\Scripts\Characters\JoystickController.cs" />
      <Compile Include="Assets\Joystick Pack\Scripts\Joysticks\DynamicJoystick.cs" />
+     <Compile Include="Assets\Scripts\Ui\Spawner.cs" />
      <Compile Include="Assets\Scripts\Others\Blink.cs" />
      <Compile Include="Assets\Scripts\Ui\TweenScale.cs" />
      <Compile Include="Assets\Joystick Pack\Scripts\Base\Joystick.cs" />
@@ -72,7 +74,6 @@
      <Compile Include="Assets\Scripts\Ui\UiHealth.cs" />
      <Compile Include="Assets\Scripts\Ui\TweenManagerUi.cs" />
      <Compile Include="Assets\Scripts\Characters\EnemyBase.cs" />
-     <Compile Include="Assets\Scripts\Others\Spawner.cs" />
      <Compile Include="Assets\Joystick Pack\Scripts\Joysticks\FloatingJoystick.cs" />
      <Compile Include="Assets\Scripts\Others\TakeDamageOnTrigger.cs" />
      <Compile Include="Assets\Scripts\Guns\Bullet.cs" />

@@ -20,11 +20,11 @@ namespace Guns
             {
                 if (i==gunIndex)
                 {
-                    guns[i].gameObject.SetActive(true);
+                    guns[i].Activate();
                 }
                 else
                 {
-                    guns[i].gameObject.SetActive(false);
+                    guns[i].Deactivate();
                 }
             }
         }

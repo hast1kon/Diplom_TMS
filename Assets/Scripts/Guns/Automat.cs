@@ -8,6 +8,7 @@ namespace Guns
         [SerializeField] private int numberOfBullets;
         [SerializeField] private Text bulletsText;
         [SerializeField] private PlayerArmory playerArmory;
+        [SerializeField] private GameObject bulletsPanel;
 
         public override void Shot()
         {
@@ -23,6 +24,7 @@ namespace Guns
         public override void Activate()
         {
             base.Activate();
+            bulletsPanel.SetActive(true);
             bulletsText.enabled = true;
             UpdateText();
         }
@@ -30,6 +32,7 @@ namespace Guns
         public override void Deactivate()
         {
             base.Deactivate();
+            bulletsPanel.SetActive(false);
             bulletsText.enabled = false;
         }
 
